@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Practice Suite - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <span class="logo-icon">🚀</span>
+                <span class="logo-text">PracticeSuite</span>
+            </div>
+            <nav>
+                <a href="#" class="active">Dashboard</a>
+                <a href="#">Utilities</a>
+                <a href="#">Academic</a>
+                <a href="#">Settings</a>
+            </nav>
+            <div class="user-profile">
+                <div class="avatar">AH</div>
+                <div class="user-info">
+                    <span class="user-name">Ali Hamza</span>
+                    <span class="user-status">Online</span>
+                </div>
+            </div>
+        </aside>
+
+        <main class="content">
+            <header>
+                <h1>Welcome Back, Ali!</h1>
+                <p>Select a utility to start your practice session.</p>
+            </header>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-label">Tasks Completed</span>
+                    <span class="stat-value">12</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Active Services</span>
+                    <span class="stat-value">4</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Practice Hours</span>
+                    <span class="stat-value">24</span>
+                </div>
+            </div>
+
+            <section class="tools-section">
+                <h2>Quick Access Utilities</h2>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <div class="tool-icon">🧮</div>
+                        <h3>Calculator</h3>
+                        <p>Scientific and basic calculations.</p>
+                        <button class="btn-primary" onclick="launchTool('calculator')">Launch</button>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">🤖</div>
+                        <h3>AI Chatbot</h3>
+                        <p>Interactive intelligent assistant.</p>
+                        <button class="btn-primary" onclick="launchTool('chatbot')">Launch</button>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">🔄</div>
+                        <h3>File & Unit Converter</h3>
+                        <p>Convert units and file formats.</p>
+                        <button class="btn-primary" onclick="launchTool('converter')">Launch</button>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">✍️</div>
+                        <h3>Text Humanizer</h3>
+                        <p>Make AI text sound natural.</p>
+                        <button class="btn-primary" onclick="launchTool('humanizer')">Launch</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
